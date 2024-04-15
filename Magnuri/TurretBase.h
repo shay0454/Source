@@ -24,6 +24,8 @@ public:
 	float UpLimit = 30.f;
 	UPROPERTY(EditAnywhere, Category = "Move")
 	float DownLimit = -10.f;
+	UPROPERTY(EditAnywhere, Category = "Fire")
+	float FireRange = 500.f;
 
 protected:
 	// Called when the game starts or when spawned

@@ -17,7 +17,10 @@ class MAGNURI_API AManualAimingTurret : public ATurretBase
 public:
 	AManualAimingTurret();
 
+protected:
 	virtual void BeginPlay() override;
+
+public:
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
