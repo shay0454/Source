@@ -58,5 +58,5 @@ void AMovingTurret::Forward(float Vaule)
     double DeltaTime = UGameplayStatics::GetWorldDeltaSeconds(this);
     FVector DeltaLocation(0.f);
     DeltaLocation.X += Vaule*DeltaTime*ForwardSpeed;
-    AddActorLocalOffset(DeltaLocation);
+    
 }
