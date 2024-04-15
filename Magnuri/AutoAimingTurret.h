@@ -18,10 +18,13 @@ public:
 	AAutoAimingTurret();
 
 protected:
+private:
+	FHitResult HitResult;
+public:
 	virtual void BeginPlay() override;
 
-public:
 	virtual void Tick(float DeltaTime) override;
 
+	bool CheckInRange(FHitResult& OutHitResult);
 
 };
