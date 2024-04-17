@@ -18,10 +18,14 @@ public:
 	AAutoAimingTurret();
 
 protected:
+private:
+	UStaticMeshComponent* TurMesh;
+	FHitResult HitResult;
+public:
 	virtual void BeginPlay() override;
 
-public:
 	virtual void Tick(float DeltaTime) override;
 
+	bool CheckInRange(FHitResult& OutHitResult);
 
 };
